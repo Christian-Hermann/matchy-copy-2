@@ -8,7 +8,7 @@
  * and read every instruction carefully.
  */
 
-const { stubArray } = require("lodash");
+// const { stubArray } = require("lodash");
 
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
@@ -146,15 +146,41 @@ console.log(animals)
 //////////////////////////////////////////////////////////////////////
 
 
+
+
+// 1. I chose an array because they are used to store data 
+//    and they are easily manipulated.
+
+// create a variable and assign to a data structure
+var friends = [];
+// create a function with input array
+function getRandom(arr){
+// returns a random index of the input array
+// Math.floor() finds lowest integer
+// Math.random() * arr.length finds random index in length of array
+  return Math.floor(Math.random() * arr.length)
+}
+
 /*
-I: 
-O: 
-C: 
-E: 
+I: using random index from function get random animal
+O: add its name to friends array
+C: NA
+E: NA
 */
 
-// 1. I have chosen arrays because they are used to make lists and 
-//    easy to manipulate
+// 
+// Get a random index of array using getRandom function
+let animalIndex = getRandom(animals)
+// Push random animals name to friends array
+friends.push(animals[animalIndex].name)
+console.log(friends)
+// Add friends list as property on friends
+animals[animalIndex]['friends'] = friends
+console.log(friends)
+
+
+
+
 
 
 
