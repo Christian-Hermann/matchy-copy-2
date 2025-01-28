@@ -13,6 +13,22 @@
 // Step 1 - Search ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/*
+I: takes in an array of animals and a string representing name of animal
+O: return animals object if animal with that name exists
+C: return null if no animal exists
+E:
+*/
+
+var search = function(animals, string){
+// check if animal array for string 
+    if(animals === string){
+        return animals
+    } else {
+        return null
+    }
+}
+
 
 
 //////////////////////////////////////////////////////////////////////
