@@ -16,18 +16,23 @@
 /*
 I: takes in an array of animals and a string representing name of animal
 O: return animals object if animal with that name exists
-C: return null if no animal exists
+C: use a for loop, return null if no animal exists
 E:
 */
 
-var search = function(animals, string){
-// check if animal array for string 
-    if(animals === string){
-        return animals
-    } else {
-        return null
+function search(animals, animalName){
+// loop through animals array 
+for (i = 0; i < animals.length; i++){
+    // check to see if string name exist on array
+    if(animals[i].name === animalName){
+     // if name exists return object
+        return animals[i]
     }
 }
+// if array name not found return null
+return null;
+}
+ 
 
 
 
