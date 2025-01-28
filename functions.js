@@ -28,10 +28,14 @@ for (i = 0; i < animals.length; i++){
      // if name exists return object
         return animals[i]
     }
+    console.log(animals[i])
 }
 // if array name not found return null
 return null;
 }
+
+search(dog, dog)
+search(cat, dog)
  
 
 
@@ -39,6 +43,20 @@ return null;
 //////////////////////////////////////////////////////////////////////
 // Step 2 - Replace //////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+/*
+I: Takes in an array of animals, string representing name of animal
+   and an Object representing replacement animal
+O: If animal string within animal array exists
+   Replace entire object with replacement object
+C: Use a for loop
+E: NA
+*/
+
+function replace(animals, name, replacement){
+
+}
+
 
 
 
