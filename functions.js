@@ -34,8 +34,8 @@ for (i = 0; i < animals.length; i++){
 return null;
 }
 
-search(dog, dog)
-search(cat, dog)
+search()
+
  
 
 
@@ -53,10 +53,16 @@ C: Use a for loop
 E: NA
 */
 
-function replace(animals, name, replacement){
-
+function replace(animals, animalName, replacement){
+// use a for loop to iterate through the array
+for(let i = 0; i < animals.length; i++){
+   // find if name string is in the anmals array
+   if(animals[i].name === animalName){
+    // if array name is found matching string replace with new object
+       animals[i] = replacement
 }
-
+}
+}
 
 
 
