@@ -11,6 +11,20 @@
 //////////////////////////////////////////////////////////////////////
 // Step 1 - Object Creation //////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+/*
+I: create animal object
+O: output will print animal object using the console
+C: use dot notation use bracet notation
+E: NA
+*/
+
+var animal = {};
+animal.species = "Dog"
+animal['name'] = "Cooper"
+animal.noises = [];
+
+
+
 
 
 
@@ -19,11 +33,43 @@
 // Step 2 - Array Creation ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/*
+I: Create a variable named "noises"
+O: An array of noises
+C: Use different methods for bracket notation to add string to array
+E: NA
+*/
+
+var noises = [];
+
+// place at position 'zero' in the array
+noises[0] = 'bark'
+// place noise at the end of the array
+noises[noises.length] = 'screech'
+// place noise at the end of array
+noises.push('scream')
+// place noise at the begining of the array
+noises.unshift('beep')
+
+console.log(noises)
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Combining Step 1 and 2 ///////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+/*
+I: 
+O: 
+C: 
+E: 
+*/
+
+// Add 'noises' array to the object
+animal['noises'] = noises
+// Add another noise to noises array
+animal.noises.push('quack')
+
 
 
 
@@ -50,11 +96,91 @@
 // Step 6 - A Collection of Animals //////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/*
+I: 
+O: 
+C: 
+E: 
+*/
+
+var animals = [];
+
+// push animal object onto animals array
+animals.push(animal)
+// console.log animals
+console.log(animals)
+// create a variable duck and assign key/vale pairs
+var duck = {
+species: 'Duck',
+name: 'Jerome',
+noises: ['quack', 'honk', 'sneeze', 'woosh']
+}
+// Push duck onto animals
+animals.push(duck)
+console.log(animals)
+// Make two more animal objects
+var cat = {
+species: 'Cat',
+name: 'Kitty',
+noises: ['meow', 'hiss', 'quack']
+};
+
+var bird = {
+  species: 'Bird',
+  name: 'Birdy',
+  noises: ['oink', 'squawk', 'gasp']
+};
+// Add the new objects to animals
+animals.push(cat)
+animals.push(bird)
+
+console.log(animals)
+
+
 
 
 //////////////////////////////////////////////////////////////////////
 // Step 7 - Making Friends ///////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+/*
+I: Write a function that takes in an array 
+O: Returns a random index of the input array
+C: Use Math.random
+E: 
+*/
+
+// 1. I chose an array because they are used to store data 
+//    and they are easily manipulated.
+
+// create a variable and assign to a data structure
+var friends = [];
+// create function with random index
+var getRandom = function(arr){
+// returns a random index of the input array
+  return Math.random(arr)
+}
+
+/*
+I: using random index from function get random animal
+O: add its name to friends array
+C: NA
+E: NA
+*/
+
+// get a random index using created function
+var randomIndex = getRandom(animals)
+// get the animal at the random index
+var randomAnimal = animals[randomIndex]
+
+friends.push(randomAnimal.name)
+
+
+
+
+
+
+
 
 
 
