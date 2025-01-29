@@ -156,8 +156,8 @@ var friends = [];
 // create a function with input array
 function getRandom(arr){
 // returns a random index of the input array
-// Math.floor() finds lowest integer
-// Math.random() * arr.length finds random index in length of array
+// Math.floor() finds lowest integer - use with Math.random()
+// Math.random() * arr.length finds random index and length of array
   return Math.floor(Math.random() * arr.length)
 }
 

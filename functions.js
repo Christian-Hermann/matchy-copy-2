@@ -49,7 +49,7 @@ I: Takes in an array of animals, string representing name of animal
    and an Object representing replacement animal
 O: If animal string within animal array exists
    Replace entire object with replacement object
-C: Use a for loop
+C: Use a for loop to iterate through
 E: NA
 */
 
@@ -58,7 +58,8 @@ function replace(animals, animalName, replacement){
 for(let i = 0; i < animals.length; i++){
    // find if name string is in the anmals array
    if(animals[i].name === animalName){
-    // if array name is found matching string replace with new object
+    // if element name is found matching string replace with new object
+    // just use element to equal replacement object
        animals[i] = replacement
 }
 }
@@ -69,6 +70,19 @@ for(let i = 0; i < animals.length; i++){
 //////////////////////////////////////////////////////////////////////
 // Step 3 - Remove ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
+
+/*
+I: Takes in an array of animals and a string name 
+O: 
+C: 
+E: 
+*/
+
+function remove(animals, name){
+
+}
+
+
 
 
 
