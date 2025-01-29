@@ -73,12 +73,20 @@ for(let i = 0; i < animals.length; i++){
 
 /*
 I: Takes in an array of animals and a string name 
-O: 
-C: 
-E: 
+O: If an animal name sring exists in animal array remove it.
+C: Use a for loop
+E: NA
 */
 
-function remove(animals, name){
+function remove(animals, animalName){
+   // iterate though for loop of animal array
+   for(let i = 0; i < animals.length; i++){
+      // find if string name matches name in array
+   if(animals[i].name === animalName){
+      //use splice to remove the element from the index
+      animals.splice(i, 1)
+   }
+   }
 
 }
 
