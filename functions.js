@@ -83,7 +83,7 @@ function remove(animals, animalName){
    for(let i = 0; i < animals.length; i++){
       // find if string name matches name in array
    if(animals[i].name === animalName){
-      //use splice to remove the element from the index
+      //use splice to remove the element from the array at the index 'i'
       animals.splice(i, 1)
    }
    }
@@ -98,8 +98,34 @@ function remove(animals, animalName){
 // Step 4 - Add ///////////////////////////////////////////////////
 //////////////////////////////////////////////////////////////////////
 
+/*
+I: Takes in an array of animals and an object representing new animal
+O: Checks that the animal Object has a 'name' property w/ length > 0
+   Checks that the animal Object has a 'species' property w/ length > 0
+   Has unique name - no other animals have same name.
+   Adds new Object to array only if ALL conditions pass
+C: Use a for loop
+E: NA
+*/
 
 
+function add(animals, animal){
+   // use for loop to iterate through array to check if it has the same name
+    for (let i = 0; i < animals.length; i++){
+      // check if animal name exists
+       if(animals[i].name === animal.name){
+         // if animal name already exists return
+          return
+    // check if animal name and speices properties have lengths greater than zero
+       if(animal.name.length === 0 && animal.species.length === 0) {
+        // if zero then return
+          return 
+         } 
+       }
+ }
+    // if the object passes all of the tests push animal object onto animals array
+   animals.push(animal)
+ }
 /**
  * You did it! You're all done with Matchy!
  */
